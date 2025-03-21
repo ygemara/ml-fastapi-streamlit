@@ -8,7 +8,7 @@ num = st.number_input("Enter a number:")
 if st.button("Predict"):
     response = requests.post(
         #"https://your-fastapi-url.onrender.com/predict",  # TEMP placeholder
-        "http://localhost:8000/predict",
+        "https://view-s3-file.onrender.com/predict",
         json={"number": num}
     )
     result = response.json()
