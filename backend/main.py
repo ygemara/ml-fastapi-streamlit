@@ -3,7 +3,7 @@ from pydantic import BaseModel
 import joblib
 
 app = FastAPI()
-model = joblib.load("../model/model.pkl")
+model = joblib.load("model/model.pkl")
 
 class Input(BaseModel):
     number: float
