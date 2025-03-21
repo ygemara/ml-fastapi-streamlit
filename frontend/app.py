@@ -8,7 +8,7 @@ num = st.number_input("Enter a number:")
 if st.button("Predict"):
     try:
         response = requests.post(
-            "https://your-fastapi-app.onrender.com/predict",  # Replace with your real URL
+            "https://view-s3-file.onrender.com/predict",  # Replace with your real URL
             json={"number": num}
         )
 
